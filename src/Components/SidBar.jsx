@@ -4,11 +4,21 @@ import { MdGroups } from "react-icons/md";
 import { FaClipboardList } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import logo from "../assets/images/logo.png";
 
-export const SidBar = () => {
+export const SidBar = ({open}) => {
+
   return (
-    <div className='sideBar py-4 d-flex flex-column justify-content-between'>
+    <div className={`sideBar py-4 d-flex flex-column justify-content-between ${open&&"showSidebar"}`}>
         <ul className='  gap-4 p-0 m-0 d-flex justify-content-start align-items-center flex-column'>
+          <li className='d- d-md-none justify-content-center'>
+          <img
+          src={logo}
+          alt="logo"
+          width={"100%"}
+          style={{ objectFit: "cover !important" }}
+        />
+          </li>
             <li><FaHouse className="Active"  size={24}  color="#999899"/>
             </li>
             <li><IoChatbubbleEllipses size={24} color="#999899"  />

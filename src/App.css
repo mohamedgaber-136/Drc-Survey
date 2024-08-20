@@ -19,6 +19,15 @@ body,.app{
 
   
 }
+.showSidebar{
+  position: fixed !important;
+  width: 125px;
+  min-height:100vh !important;
+  background-color: white;
+  z-index: 999;
+  top: 0;
+  left: 0 !important;
+}
 @media (max-width: 576px) {
   .sideBar{
     position: absolute;
@@ -29,10 +38,7 @@ body,.app{
     left: -150px;
   }
 }
-.sideBar img {
-  position: relative;
-  left: 45px;
-}
+
 .lastItem{
   border: 5px solid red;
   justify-self: start !important;

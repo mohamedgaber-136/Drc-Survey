@@ -4,11 +4,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { TfiWorld } from "react-icons/tfi";
 import img from "../assets/images/image-avatar.png";
 import ProfileDropDown from "./ProfileDropDown";
-export const NavBar = () => {
+import { HiBars3BottomLeft } from "react-icons/hi2";
+
+export const NavBar = ({setOpen ,open}) => {
   return (
     <div className="flex-column d-flex">
        <div className="ProfileData  d-flex justify-content-between px-0 px-md-5 align-items-center">
-        <button>open</button>
+        <button className="bg-transparent border-0 d-block d-md-none" onClick={()=>setOpen(!open)}><HiBars3BottomLeft size={25}/></button>
       <div className="logo">
         <img
           src={logo}
