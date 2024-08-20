@@ -8,6 +8,7 @@ export const NavBar = () => {
   return (
     <div className="flex-column d-flex">
        <div className="ProfileData  d-flex justify-content-between px-0 px-md-5 align-items-center">
+        <button>open</button>
       <div className="logo">
         <img
           src={logo}
