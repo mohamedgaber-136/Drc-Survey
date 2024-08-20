@@ -5,12 +5,12 @@ import img from "../assets/images/image-avatar.png";
 export const SurveyCard = ({state}) => {
   return (
     <div className='SurveyCard border rounded-4 rounded  p-3'>
-        <div className="title d-flex justify-content-between align-items-center">
+        <div className="title d-flex flex-wrap flex-md-nowrap gap-2 justify-content-between align-items-center">
             <div className="titleContent d-flex  flex-column">
             <b>Survey Title</b>
             <small className='text-secondary'>Dalma grand mall</small>
             </div>
-            <div className="state d-flex ">
+            <div className="state d-flex justify-content-center ">
                 <div className={`border d-flex px-1 py-2 rounded-pill ${state=='On Going'?'bg-onGoing':'bg-Pending'}`}>
                 <small>{state}</small>
                 </div>
@@ -44,7 +44,7 @@ export const SurveyCard = ({state}) => {
                     <small className="text-secondary">both</small>
                 </div>
             </div>
-            <div className="SendTo d-flex gap-2 gap-md-0 flex-column my-2">
+            <div className="SendTo d-flex gap-2 flex-column my-2">
                 <b>Sent to</b>
                 <div className="d-flex gap-2 align-items-center">
                     <img src={img} width={'35px'} alt="" />
@@ -61,10 +61,10 @@ export const SurveyCard = ({state}) => {
             </div>
         </div>
         <div className="buttons w-100 d-flex gap-2 gap-md-0 justify-content-around">
-            <button className="text-white p-2 px-3 rounded-4 rounded border-0" style={{backgroundColor:'#6ebbdb'}}>
+            <button className="text-white p-2  rounded-4 rounded border-0" style={{backgroundColor:'#6ebbdb'}}>
                 <small>Details</small>
             </button>
-            <button className="text-white p-2 px-3 rounded-4 rounded  border-0" style={{backgroundColor:'#015095'}}>
+            <button className="text-white p-2 rounded-4 rounded  border-0" style={{backgroundColor:'#015095'}}>
                 <small>Edit Survey Information</small>
             </button>
         </div>

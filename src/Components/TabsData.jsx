@@ -78,7 +78,7 @@ export default function TabsData() {
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <div className="row justify-content-start p-0">
+        <div className="row justify-content-start gap-3 gap-md-0 p-0">
           <div className="col-12 col-lg-4 col-md-6">
             <SurveyCard state={'Pending'} />
           </div>

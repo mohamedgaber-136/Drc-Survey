@@ -28,7 +28,7 @@ body,.app{
   top: 0;
   left: 0 !important;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .sideBar{
     position: absolute;
     width: 125px;
