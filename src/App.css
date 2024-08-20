@@ -16,7 +16,18 @@ body,.app{
 .sideBar{
   width: 125px;
   height:80vh !important;
+
   
+}
+@media (max-width: 576px) {
+  .sideBar{
+    position: absolute;
+    width: 125px;
+    height:100vh !important;
+    background-color: white;
+    z-index: 1;
+    left: -150px;
+  }
 }
 .sideBar img {
   position: relative;

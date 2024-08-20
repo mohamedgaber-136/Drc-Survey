@@ -6,7 +6,8 @@ import img from "../assets/images/image-avatar.png";
 import ProfileDropDown from "./ProfileDropDown";
 export const NavBar = () => {
   return (
-    <div className="ProfileData  d-flex justify-content-between px-5 align-items-center">
+    <div className="flex-column d-flex">
+       <div className="ProfileData  d-flex justify-content-between px-0 px-md-5 align-items-center">
       <div className="logo">
         <img
           src={logo}
@@ -25,11 +26,15 @@ export const NavBar = () => {
             <span>EN</span>
           </div>
         </div>
+        <div className="  d-flex gap-4 align-items-center">
+<div className="d-none d-md-block">
+
         <TextField
           id="outlined-basic"
           label="Search a Survey"
           variant="outlined"
-        />
+          />
+          </div>
         <div className="avatars d-none    gap-2 d-md-flex align-items-center ">
           <div className="AvatarImg shadow rounded-circle">
             <img src={img} width={"50px"} height={"50px"} alt="" />
@@ -39,10 +44,24 @@ export const NavBar = () => {
             <small>show profile</small>
           </div>
         </div>
+        </div>
+
         <div className="d-flex d-md-none">
           <ProfileDropDown/>
         </div>
       </div>
+     
     </div>
+       <div className="d-flex justify-content-center my-2 w-100  d-md-none">
+
+<TextField
+  id="outlined-basic"
+  label="Search a Survey"
+  variant="outlined"
+  className="w-75"
+  />
+  </div>
+    </div>
+   
   );
 };
