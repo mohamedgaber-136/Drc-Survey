@@ -49,9 +49,7 @@ export const NavBar = ({setOpen ,open}) => {
         </div>
         </div>
 
-        <div className="d-flex d-md-none">
-          <ProfileDropDown/>
-        </div>
+       
       </div>
      
     </div>
@@ -63,6 +61,9 @@ export const NavBar = ({setOpen ,open}) => {
   variant="outlined"
   className="w-75"
   />
+   <div className="d-flex d-md-none">
+          <ProfileDropDown/>
+        </div>
   </div>
     </div>
    

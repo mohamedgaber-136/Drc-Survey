@@ -11,8 +11,8 @@ export const SurveyCard = ({state}) => {
             <small className='text-secondary'>Dalma grand mall</small>
             </div>
             <div className="state d-flex ">
-                <div className={`border d-flex px-3 py-2 rounded-pill ${state=='On Going'?'bg-onGoing':'bg-Pending'}`}>
-                <span>{state}</span>
+                <div className={`border d-flex px-1 py-2 rounded-pill ${state=='On Going'?'bg-onGoing':'bg-Pending'}`}>
+                <small>{state}</small>
                 </div>
                 <button className="px-3 bg-transparent border-0"><span className=" bg-body-tertiary rounded">
                 <RiArrowDropUpLine size={24}/></span></button>
@@ -44,7 +44,7 @@ export const SurveyCard = ({state}) => {
                     <small className="text-secondary">both</small>
                 </div>
             </div>
-            <div className="SendTo d-flex flex-column my-2">
+            <div className="SendTo d-flex gap-2 gap-md-0 flex-column my-2">
                 <b>Sent to</b>
                 <div className="d-flex gap-2 align-items-center">
                     <img src={img} width={'35px'} alt="" />
@@ -60,7 +60,7 @@ export const SurveyCard = ({state}) => {
                 </div>
             </div>
         </div>
-        <div className="buttons w-100 d-flex justify-content-around">
+        <div className="buttons w-100 d-flex gap-2 gap-md-0 justify-content-around">
             <button className="text-white p-2 px-3 rounded-4 rounded border-0" style={{backgroundColor:'#6ebbdb'}}>
                 <small>Details</small>
             </button>
