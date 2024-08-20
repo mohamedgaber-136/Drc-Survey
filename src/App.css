@@ -1,0 +1,110 @@
+
+*{
+  list-style: none;
+  font-family: "DM Serif Text", serif;
+  transition: 0.2s !important;
+  text-transform: capitalize !important;
+  text-decoration: none;
+}
+html{
+  height: 100%;
+}
+body,.app{
+  height: 100% !important;
+}
+
+.sideBar{
+  width: 125px;
+  height:80vh !important;
+  
+}
+.sideBar img {
+  position: relative;
+  left: 45px;
+}
+.lastItem{
+  border: 5px solid red;
+  justify-self: start !important;
+}
+.Active{
+  color: #eb9b2f !important;
+}
+svg:hover{
+  color: #eb9b2f !important;
+  cursor: pointer;
+  animation: shakes 1s linear infinite;
+  position: relative;
+  transition: 0.5s;
+}
+.leaveIcon {
+position: relative;
+}
+.leaveIcon svg{
+  color: white !important;
+}
+.leaveIconCircle{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #c5c3c5;
+  z-index: -1; 
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.leaveIcon:hover .leaveIconCircle{
+background-color: rgb(128, 9, 9) !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+  border-radius: 20px !important;
+}
+.Langs{
+position: relative;
+}
+.tel{
+  border-right: 2px solid #c5c3c5;
+}
+.tel,.lang{
+  width: 50px;
+}
+.surveyLogo{
+  background-color: #005394 !important;
+  border: 0 !important;
+}
+.SurveyCard{
+  width: 100%;
+}
+.bg-onGoing{
+  background-color: #dff2e6;
+}
+.bg-Pending{
+  background-color: #dee9f0;
+}
+@keyframes shakes {
+  0%{
+    left: 0;
+  
+  }
+  25%{
+    left: 5px;
+  }
+  50%{
+    left:0
+  }
+  75%{
+    left: -5px;
+  }
+  100%{
+    left: 0;
+  }
+ 
+}
+.mainHeader{
+  width: 50vw;
+}
+@media(max-width:768px){
+  .mainHeader{
+    width: 100vw;
+  }
+}
