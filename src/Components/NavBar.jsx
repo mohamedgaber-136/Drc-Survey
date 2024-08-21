@@ -36,6 +36,11 @@ export const NavBar = ({setOpen ,open}) => {
           id="outlined-basic"
           label="Search a Survey"
           variant="outlined"
+          sx={{
+            '& .MuiOutlinedInput-root': {
+              borderRadius: '20px',
+            },
+          }}
           />
           </div>
         <div className="avatars d-none    gap-2 d-md-flex align-items-center ">
@@ -60,6 +65,11 @@ export const NavBar = ({setOpen ,open}) => {
   label="Search a Survey"
   variant="outlined"
   className="w-75"
+  sx={{
+    '& .MuiOutlinedInput-root': {
+      borderRadius: '20px',
+    },
+  }}
   />
    <div className="d-flex d-md-none">
           <ProfileDropDown/>
