@@ -14,7 +14,7 @@ export const SurveyCard = ({state}) => {
                 <div className={`border d-flex px-1 py-2 rounded-pill ${state=='On Going'?'bg-onGoing':'bg-Pending'}`}>
                 <small className='smallFnt'>{state}</small>
                 </div>
-                <button className="px-3 bg-transparent border-0"><span className=" bg-body-tertiary rounded">
+                <button className="px-3 d-none d-md-block bg-transparent border-0"><span className=" bg-body-tertiary rounded">
                 <RiArrowDropUpLine size={24}/></span></button>
             </div>
         </div>
@@ -62,10 +62,10 @@ export const SurveyCard = ({state}) => {
         </div>
         <div className="buttons w-100 d-flex gap-2 gap-md-0 justify-content-around">
             <button className="text-white p-2  rounded-4 rounded border-0" style={{backgroundColor:'#6ebbdb'}}>
-                <small>Details</small>
+                <small className="smallFnt">Details</small>
             </button>
             <button className="text-white p-2 rounded-4 rounded  border-0" style={{backgroundColor:'#015095'}}>
-                <small>Edit Survey Information</small>
+                <small className="smallFnt">Edit Survey Information</small>
             </button>
         </div>
     </div>
