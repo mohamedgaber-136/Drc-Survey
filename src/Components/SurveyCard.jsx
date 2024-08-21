@@ -5,7 +5,7 @@ import img from "../assets/images/image-avatar.png";
 export const SurveyCard = ({state}) => {
   return (
     <div className='SurveyCard border rounded-4 rounded  p-3'>
-        <div className="title d-flex flex-wrap flex-md-nowrap gap-2 justify-content-between align-items-center">
+        <div className="title d-flex gap-2 justify-content-between align-items-center">
             <div className="titleContent d-flex  flex-column">
             <b>Survey Title</b>
             <small className='text-secondary'>Dalma grand mall</small>
