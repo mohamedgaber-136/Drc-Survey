@@ -125,3 +125,8 @@ position: relative;
     width: 100vw;
   }
 }
+@media(max-width:440px){
+  .smallFnt{
+    font-size: 10px;
+  }
+}

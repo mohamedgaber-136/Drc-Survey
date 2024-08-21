@@ -12,7 +12,7 @@ export const SurveyCard = ({state}) => {
             </div>
             <div className="state d-flex justify-content-center ">
                 <div className={`border d-flex px-1 py-2 rounded-pill ${state=='On Going'?'bg-onGoing':'bg-Pending'}`}>
-                <small>{state}</small>
+                <small className='smallFnt'>{state}</small>
                 </div>
                 <button className="px-3 bg-transparent border-0"><span className=" bg-body-tertiary rounded">
                 <RiArrowDropUpLine size={24}/></span></button>
